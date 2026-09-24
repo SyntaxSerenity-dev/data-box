@@ -19,15 +19,13 @@ data-box/
 │       └── 📄 dataBox.tree.min.js
 │
 ├── 📁 docs/                       # Página oficial (demo + documentação)
-│   ├── 📄 index.html                  # Landing page (estilo página do Bootstrap)
 │   ├── 📁 examples/                   # Uma página HTML por vista/funcionalidade
 │   │   ├── 📄 table-view.html
 │   │   ├── 📄 kanban-view.html
 │   │   └── 📄 tree-view.html
-│   ├── 📁 assets/
-│   │   ├── 📁 css/
-│   │   └── 📁 img/
-│   └── 📄 getting-started.html
+│   └── 📁 assets/
+│       ├── 📁 css/
+│       └── 📁 img/
 │
 ├── 📄 .gitignore
 ├── 📄 CHANGELOG.md                # Histórico de versões (Keep a Changelog)
