@@ -1,0 +1,46 @@
+{
+  "name": "data-box",
+  "version": "2.0.0",
+  "description": "Biblioteca de visualização de dados flexível e multi-vista para jQuery — tabela, cards, lista, kanban e árvore hierárquica.",
+  "main": "dist/dataBox.min.js",
+  "unpkg": "dist/dataBox.min.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "npm run build:core && npm run build:plugins",
+    "build:core": "terser src/dataBox.js -c -m --comments \"/^!|@license|@version/\" -o dist/dataBox.min.js",
+    "build:plugins": "terser src/plugins/dataBox.tree.js -c -m --comments \"/^!|@license|@version/\" -o dist/plugins/dataBox.tree.min.js"
+  },
+  "keywords": [
+    "datatable",
+    "datatables",
+    "jquery",
+    "table",
+    "kanban",
+    "tree",
+    "data-visualization",
+    "grid"
+  ],
+  "author": {
+    "name": "Syntax Serenity",
+    "email": "fs.developerfullstack@gmail.com",
+    "url": "https://www.syntaxserenity.co.ao"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyntaxSerenity-dev/data-box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SyntaxSerenity-dev/data-box/issues"
+  },
+  "homepage": "https://syntaxserenity-dev.github.io/data-box/",
+  "peerDependencies": {
+    "jquery": ">=3.0.0"
+  },
+  "devDependencies": {
+    "terser": "^5.0.0"
+  }
+}
